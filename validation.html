@@ -11,6 +11,7 @@
             padding: 0;
             background-color: #f7f7f7;
             color: #333;
+            overflow-x: hidden; /* Prevent horizontal scroll */
         }
 
         header {
@@ -138,6 +139,15 @@
             color: #d9534f;
         }
 
+        /* Reduce video size */
+        video {
+            max-width: 50%; /* Reduced video frame size */
+            height: auto;
+            margin: 0 auto;
+            display: block;
+        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
             header {
                 flex-direction: column;
@@ -156,7 +166,23 @@
             .submit-btn {
                 font-size: 14px;
             }
+
+            video {
+                max-width: 80%; /* Slightly larger video on small screens */
+            }
         }
+
+        @media (max-width: 480px) {
+            .form-container {
+                width: 100%;
+                padding: 1.5rem;
+            }
+
+            video {
+                max-width: 90%; /* Even larger video on very small screens */
+            }
+        }
+
     </style>
 </head>
 
@@ -183,7 +209,7 @@
             <!-- Detailed Video Information -->
             <div class="input-group">
                 <label for="video">Detailed Video Information:</label>
-                <video width="80%" height="auto" controls autoplay>
+                <video controls autoplay>
                     <source src="kabeer.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
