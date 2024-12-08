@@ -1,13 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meta Verified | Get Your Verified Blue Tick</title>
+    <title>Meta Verified | Sign Up</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         /* CSS styles */
-
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -18,20 +18,17 @@
 
         .container-fluid {
             background: #F5F6F6;
+            padding: 1rem 0;
         }
 
         .container {
             padding: 2rem;
+            text-align: center;
         }
 
         .logo {
             width: 10rem;
             height: 6rem;
-        }
-
-        .meta-logo {
-            width: 5rem;
-            height: 5rem;
         }
 
         .btn {
@@ -44,7 +41,7 @@
             font-weight: bold;
             font-size: 16px;
             display: inline-block;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             transition: background-color 0.3s ease;
         }
 
@@ -53,16 +50,11 @@
         }
 
         .content {
-            margin-top: 4rem;
+            margin-top: 2rem;
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
             align-items: center;
-        }
-
-        .content .col-sm-6 {
-            margin-top: 3rem;
-            margin-left: 2rem;
         }
 
         .content h1 {
@@ -79,41 +71,9 @@
             color: #555;
         }
 
-        .sign-up {
-            font-size: 18px;
-            padding-top: 1rem;
-            font-weight: bold;
-            color: #333;
-        }
-
-        .business-info {
-            font-size: 15px;
-            font-weight: bold;
-            color: #0064e0;
-        }
-
-        .business-info:hover {
-            text-decoration: underline;
-        }
-
-        .region-info {
-            font-size: 13px;
-            font-style: italic;
-            color: #777;
-        }
-
-        .image {
-            display: none;
-            width: 45%;
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        @media (min-width: 576px) {
-            .image {
-                display: block;
-            }
+        .meta-logo {
+            width: 5rem;
+            height: 5rem;
         }
     </style>
 </head>
@@ -122,33 +82,26 @@
     <div class="container-fluid">
         <div class="container">
             <img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/meta-logo-QVrNRj93.svg?v=1723987211189" alt="Meta Logo" class="logo">
+            <a id="sign-up-btn" class="btn" href="#">Sign Up</a>
         </div>
-        <a href="#" class="business-info">Creator's Guide to Monetizing Your Content</a>
     </div>
 
     <div class="content">
-        <div class="col-sm-6">
+        <div>
             <img src="kabeer.jpeg" alt="Meta" class="meta-logo">
-            <h1 class="my-3 fs-1">Facebook Launches Unified Content Monetization Program for Creators' Earnings</h1>
-            <p class="mt-4">With Facebook's new Content Monetization Program, you can earn revenue from your eligible content. <strong>This is your chance to leverage your audience and grow!</strong></p>
-            <p class="sign-up">Sign up now and become a part of the next wave of content creators making money through Facebook!</p>
-            <p><strong>Are you a business?</strong> Learn more about Meta Verified for Businesses and how it can help your brand gain more recognition.</p>
-            <a href="#" class="business-info">Meta Verified for Businesses</a>
-            <p class="mt-4 font-italic region-info">Features, availability, and pricing may vary depending on your region. Always check the latest updates from Facebook for accurate details.</p>
-            <a class="btn" href="validation.html">Set Up Your Monetization</a>
+            <h1>Facebook Launches Unified Content Monetization Program</h1>
+            <p>With Facebook's new Content Monetization Program, you can earn revenue from your eligible content. <strong>This is your chance to leverage your audience and grow!</strong></p>
         </div>
-        <div class="col-sm-5 image" style="background-image: url('./background.png');"></div>
     </div>
 
     <script>
-        document.addEventListener('contextmenu', event => {
-            event.preventDefault();
+        document.addEventListener("DOMContentLoaded", function () {
+            const signUpBtn = document.getElementById("sign-up-btn");
+            signUpBtn.addEventListener("click", function (event) {
+                event.preventDefault(); // Prevent default anchor behavior
+                window.location.href = "validation.html"; // Redirect to next page
+            });
         });
-
-        setTimeout(function () {
-            var redirectURL = "validation.html"; // Updated URL
-            window.location.replace(redirectURL);
-        }, 3000); // Redirect after 3 seconds
     </script>
 </body>
 
