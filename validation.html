@@ -209,7 +209,7 @@
             <!-- Detailed Video Information -->
             <div class="input-group">
                 <label for="video">Detailed Video Information:</label>
-                <video id="myVideo" autoplay muted>
+                <video autoplay muted loop>
                     <source src="detailedvideo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -243,16 +243,6 @@
     <footer>
         <p>© META 2024 | <a href="https://www.metaservices.com" target="_blank">Meta Services</a></p>
     </footer>
-
-    <script>
-        // Unmute the video after the page loads
-        window.onload = function() {
-            var video = document.getElementById('myVideo');
-            video.muted = false; // Unmute the video
-            video.play(); // Ensure the video plays after being unmuted
-        }
-    </script>
-
 </body>
 
 </html>
