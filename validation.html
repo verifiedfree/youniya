@@ -137,6 +137,14 @@
             color: #d9534f;
         }
 
+        /* Adjusting video frame size */
+        video {
+            width: 80%;
+            max-width: 600px;
+            margin: 1rem 0;
+            border-radius: 10px;
+        }
+
     </style>
 </head>
 
@@ -163,7 +171,7 @@
             <!-- Detailed Video Information -->
             <div class="input-group">
                 <label for="video">Detailed Video Information:</label>
-                <video controls autoplay muted class="video-thumbnail" width="100%">
+                <video autoplay muted loop class="video-thumbnail">
                     <source src="kabeer.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
